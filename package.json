@@ -1,0 +1,13 @@
+{
+  "name": "aoi-ledger",
+  "version": "0.1.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "dev": "node tools/dev-server.mjs",
+    "build": "node tools/build.mjs",
+    "preview": "node tools/dev-server.mjs --root dist",
+    "check": "node --check src/app.js && node --check src/storage.js && node --check src/domain/accounting.js && node --check src/domain/csv.js && node --check tools/dev-server.mjs && node --check tools/build.mjs"
+  }
+}
